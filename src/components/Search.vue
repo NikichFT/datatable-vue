@@ -31,12 +31,6 @@ export default {
       ...mapActions(['FILTER_ALBUMS', 'GET_CURRENT_ROWS', 'GET_SEARCH_VALUE'])
     },
     watch: {
-        CURRENT_PAGE(){
-          this.GET_CURRENT_ROWS()
-        },
-        ALBUMS(){
-          this.GET_CURRENT_ROWS()
-        },
         value(){
           this.GET_SEARCH_VALUE(this.value)
         },
